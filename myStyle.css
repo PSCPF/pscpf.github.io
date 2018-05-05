@@ -16,11 +16,11 @@ __/\\\\\\\\\\\\\\\______________________________________________________________
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #ffffff; 
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #000; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
