@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,7 +13,7 @@
   <meta name="author" content="JacksonFovero">
   <meta name="application-name" content="PikachuFantastics' SCPF Website"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Security Department</title>
+<title>Unauthorized Access</title>
   <style>
   #loader {
   position: absolute;
@@ -24,20 +25,23 @@
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #000000;
+  border-top: 16px solid #ff0000;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -45,14 +49,17 @@
   animation-name: animatebottom;
   animation-duration: 1s
 }
+
 @-webkit-keyframes animatebottom {
   from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
+
 @keyframes animatebottom {
   from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
+
 #myDiv {
   display: none;
   text-align: center;
@@ -61,6 +68,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -70,58 +78,37 @@
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-.alert {
-    padding: 20px;
-    background-color: #f44336;
+/* unvisited link */
+a:link {
     color: white;
 }
 
-.closebtn {
-    margin-left: 15px;
+/* visited link */
+a:visited {
     color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.closebtn:hover {
-    color: black;
+/* mouse over link */
+a:hover {
+    color: grey;
 }
 
-a {
-color: black;
-}
-
-p {
-font-family:Trebuchet MS;
+/* selected link */
+a:active {
+    color: grey;
 }
 </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <audio autoplay loop>
-  <source src="096_1.ogg" type="audio/ogg">
+<body background="SA6.png" style="margin:0;font-family:Trebuchet MS;color:red;text-align:center;">
+<audio autoplay loop>
+  <source src="096_3.ogg" type="audio/ogg">
   </audio>
-  <p style="font-size:400%;">The Overseer of the Security Department has not submitted a webpage request to JacksonFovero.</p>
-  <script>
-var myVar;
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
-</body>
-</html>
+  <p style="font-size:200%;">This area is restricted to ███ personnel.</p>
+  <p style="font-size:150%;">Unauthorized personnel will be terminated by ███.</p>
+  <p style="font-size:100%;">You are not authorized to continue. <a href="https://xscpf.github.io">Exit immediately.</a></p>
+  </body>

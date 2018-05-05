@@ -3,14 +3,14 @@
 <head>
 <!--
 
-__/\\\\\\\\\\\\\\\________________________________________________________________________        
- _\/\\\///////////_________________________________________________________________________       
-  _\/\\\____________________________________________________________________________________      
-   _\/\\\\\\\\\\\_________/\\\\\_____/\\\____/\\\_____/\\\\\\\\___/\\/\\\\\\\______/\\\\\____     
-    _\/\\\///////________/\\\///\\\__\//\\\__/\\\____/\\\/////\\\_\/\\\/////\\\___/\\\///\\\__    
-     _\/\\\______________/\\\__\//\\\__\//\\\/\\\____/\\\\\\\\\\\__\/\\\___\///___/\\\__\//\\\_   
-      _\/\\\_____________\//\\\__/\\\____\//\\\\\____\//\\///////___\/\\\_________\//\\\__/\\\__  
-       _\/\\\______________\///\\\\\/______\//\\\______\//\\\\\\\\\\_\/\\\__________\///\\\\\/___ 
+__/\\\\\\\\\\\\\\\________________________________________________________________________
+ _\/\\\///////////_________________________________________________________________________
+  _\/\\\____________________________________________________________________________________
+   _\/\\\\\\\\\\\_________/\\\\\_____/\\\____/\\\_____/\\\\\\\\___/\\/\\\\\\\______/\\\\\____
+    _\/\\\///////________/\\\///\\\__\//\\\__/\\\____/\\\/////\\\_\/\\\/////\\\___/\\\///\\\__
+     _\/\\\______________/\\\__\//\\\__\//\\\/\\\____/\\\\\\\\\\\__\/\\\___\///___/\\\__\//\\\_
+      _\/\\\_____________\//\\\__/\\\____\//\\\\\____\//\\///////___\/\\\_________\//\\\__/\\\__
+       _\/\\\______________\///\\\\\/______\//\\\______\//\\\\\\\\\\_\/\\\__________\///\\\\\/___
         _\///_________________\/////_________\///________\//////////__\///_____________\/////_____
 -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -78,12 +78,12 @@ __/\\\\\\\\\\\\\\\______________________________________________________________
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
+  from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
 
@@ -93,9 +93,10 @@ __/\\\\\\\\\\\\\\\______________________________________________________________
 }
 .alert {
     padding: 20px;
-    background-color: #f44336; /* Red */
+    background-color: #000000;
     color: white;
     margin-bottom: 15px;
+    font-family: Trebuchet MS
 }
 
 .closebtn {
@@ -112,20 +113,74 @@ __/\\\\\\\\\\\\\\\______________________________________________________________
 .closebtn:hover {
     color: black;
 }
+.button {
+  border-radius: 4px;
+  background-color: #808080;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: Trebuchet MS
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()" style="margin:0;" style="text-align:center;font-family: Trebuchet MS;">
 <audio loop autoplay>
 <source src="Groaning_Ambience.ogg" type="audio/ogg">
 </audio>
 <div id="loader"></div>
-<!--<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  This is an alert box.
-</div> ALERT IF NEEDED-->
+
 <div style="display:none;" id="myDiv" class="animate-bottom">
 <!-- Jack, page content goes in here. -->
-<p style="font-size:500%;">Under Construction</p>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <b>Notice:</b> This page is <i>under construction</i>.
+</div>
+<p style="font-size:500%;">Welcome to the Special Containment Procedures Foundation</p>
+  <p style="color:white;font-size:50%;">You cannot resist.</p>
+  <a href="https://www.roblox.com/My/Groups.aspx?gid=2760782"><p style="font-size:200%;"><button class="button"><span>Join</span></button></p></a>
+  <a href="https://discord.gg/saF7YwE"><p style="font-size:150%;"><button class="button"><span>Discord</span></button></p></a>
+  <a href="https://xscpf.github.io/departments/SD"><p style="font-size:150%;"><button class="button"><span> SD </span></button><p></a>
+  <a href="https://xscpf.github.io/departments/MTF"><p style="font-size:150%;"><button class="button"><span> MTF </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/ScD"><p style="font-size:150%;"><button class="button"><span> ScD </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/EC"><p style="font-size:150%;"><button class="button"><span> EC </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/ET"><p style="font-size:150%;"><button class="button"><span> E&T </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/MD"><p style="font-size:150%;"><button class="button"><span> MD </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/DEA"><p style="font-size:150%;"><button class="button"><span> DEA </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/MaD"><p style="font-size:150%;"><button class="button"><span> MaD </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/DoR"><p style="font-size:150%;"><button class="button"><span> DoR </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/IA"><p style="font-size:150%;"><button class="button"><span> IA </span></button></p></a>
+  <a href="https://xscpf.github.io/departments/ISD"><p style="font-size:150%;"><button class="button"><span> ISD </span></button></p></a>
 </div>
 <script>
 var myVar;
