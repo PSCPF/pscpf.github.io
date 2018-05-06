@@ -2,6 +2,7 @@ p {
   color: black;
   font-family: Trebuchet MS;
   font-size: 100%;
+  text-shadow: #808080 1px 1px 1px
 }
 body {
   font-family: Trebuchet MS;
@@ -11,9 +12,16 @@ body {
 
 h1 {
   font-size: 300%;
+  text-shadow: #808080 1px 1px 1px;
 }
 h2 {
   font-size: 200%;
+  text-shadow: #808080 1px 1px 1px;
+}
+h3 {
+  font-size: 150%;
+  font-family: Courier New;
+  text-shadow: #808080 1px 1px 1px;
 }
 a:link {
   color: #ffffff;
@@ -90,6 +98,7 @@ a:active {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  text-shadow: #808080 1px 1px 1px;
 }
 
 .hover span {
@@ -115,4 +124,26 @@ a:active {
 .hover:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+div.about {
+  font-family: Courier New, Courier, monospace;
+  margin-left: 100px;
+  margin-right: 100px;
 }
