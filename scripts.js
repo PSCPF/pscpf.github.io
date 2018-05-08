@@ -12,3 +12,6 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+function construction() {
+  alert("This website is undergoing construction, and most of what you currently see are the earliest footprints for the site.")
+}
