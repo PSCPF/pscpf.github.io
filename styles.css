@@ -14,7 +14,7 @@ h1 {
   font-size: 300%;
   text-shadow: #808080 1px 1px 1px;
 }
-h1.404 {
+#error404 {
   font-size: 500%;
   text-shadow: #808080 1px 1px 1px;
 }
