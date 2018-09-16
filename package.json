@@ -1,0 +1,20 @@
+{
+  "name": "pscpf.github.io",
+  "version": "1.0.0",
+  "description": "The official website for PSCPF.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PSCPF/pscpf.github.io.git"
+  },
+  "author": "JacksonFovero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PSCPF/pscpf.github.io/issues"
+  },
+  "homepage": "https://github.com/PSCPF/pscpf.github.io#readme",
+  "dependencies": {}
+}
